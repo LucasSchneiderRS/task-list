@@ -1,0 +1,23 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<div>
+  <div>
+  <md-button-toggle-group #group="mdButtonToggleGroup">
+  <md-button-toggle value="URGENTE">
+    <md-icon class="urgente">error</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="Normal">
+    <md-icon class="normal">label_outline</md-icon>
+  </md-button-toggle>
+  </md-button-toggle-group>
+    <div class="normal">{{group.value}}</div>
+  </div>
+  
+  <div>
+  <md-input-container>
+  <input [(ngModel)]="task" mdInput placeholder="New Task">
+  </md-input-container>
+  <button md-button md-raised-button color="primary" (click)="addTask()">Add</button>
+  </div>
+</div>

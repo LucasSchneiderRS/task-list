@@ -1,0 +1,22 @@
+.task-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #eee;
+}
+
+.notask-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #eee;
+  color: red;
+  font: bold;
+}
+
+button.delete {
+  float: right;
+  top: -60px;
+}
+.center {
+  display: table;
+  margin: auto;
+}
